@@ -1,0 +1,43 @@
+{
+	"name": "custom-bootstrap-build",
+	"description": "Create a custom Bootstrap build with jQuery and Parsley.",
+	"version": "0.0.1",
+	"author": {
+		"name": "Benjamin ACH",
+		"email": "benjamin.ach+cbb@gmail.com",
+		"url": "http://www.benjaminach.fr"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/benjaminach/custom-bootstrap-build/blob/master/LICENSE.MD"
+		}
+	],
+	"scripts": {
+		"compile": "grunt",
+		"test": "grunt verify"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:benjaminach/custom-bootstrap-build.git"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-cli": "~0.1",
+		"grunt-contrib-clean": "~0.5.0",
+		"grunt-contrib-concat": "~0.3.0",
+		"grunt-contrib-copy": "~0.5.0",
+		"grunt-contrib-uglify": "~0.3.1",
+		"grunt-contrib-less": "~0.9.0",
+		"grunt-contrib-watch": "latest",
+		"jpegtran-bin": "0.2.0",
+		"grunt-contrib-imagemin": "latest",
+		"grunt-contrib-connect": "latest",
+		"grunt-html-validation": "latest",
+		"grunt-contrib-jshint": "latest",
+		"grunt-contrib-csslint": "latest",
+		"grunt-jsbeautifier": "latest",
+		"grunt-phantomas": "latest",
+		"grunt-modernizr": "~0.4.1"
+	}
+}

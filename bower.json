@@ -1,0 +1,30 @@
+{
+  "name": "custom-bootstrap-build",
+  "version": "0.0.1",
+  "main": [
+    "./dist/js/*",
+    "./dist/css/*",
+    "./dist/fonts/*",
+    "./dist/images/*"
+  ],
+  "ignore": [
+    "images/",
+    "fonts/",
+    "js/",
+    "less/",
+    "style-guide/",
+    "Gruntfile.js",
+    "style-guide",
+    "package.json",
+    "phantomas"
+  ],
+  "dependencies": {
+    "jquery": "~1.10",
+    "bootstrap": "3.0.3",
+    "font-awesome": "~4.0.3",
+    "modernizr": "~2.7.1",
+    "respond": "~1.4.2",
+    "parsleyjs": "~1.2.3",
+    "html5shiv": "~3.7"
+  }
+}
