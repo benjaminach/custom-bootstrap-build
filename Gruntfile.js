@@ -9,7 +9,8 @@ module.exports = function (grunt) {
 
 		clean: {
 			dist: ['dist'],
-			tmp: ['dist/tmp']
+			tmp: ['dist/tmp'],
+			styleguideassets: ['style-guide/fonts/**', 'style-guide/css/**', 'style-guide/images/**', 'style-guide/js/**']
 		},
 
 		concat: {
@@ -210,7 +211,7 @@ module.exports = function (grunt) {
 			},
 			docserver: {
 				options: {
-					port: 9003,
+					port: 9002,
 					base: 'style-guide'
 				}
 			}
@@ -248,8 +249,7 @@ module.exports = function (grunt) {
 			styleguide: {
 				options: {
 					indexPath: './phantomas/',
-					numberOfRuns: 10,
-					url: 'http://localhost:9003'
+					url: 'http://localhost:9002/'
 				}
 			}
 		}
@@ -273,6 +273,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('default', [
 		'clean:dist',
+		'clean:styleguideassets',
 		//'modernizr',
 		'jshint',
 		'concat:bootstrap-js',
@@ -281,10 +282,10 @@ module.exports = function (grunt) {
 		'uglify:app-js',
 		'less:development',
 		'less:production',
+		'imagemin',
 		'copy:fonts',
 		'copy:bootstrapfonts',
 		'copy:styleguideassets',
-		'imagemin',
 		'clean:tmp'
 	]);
 

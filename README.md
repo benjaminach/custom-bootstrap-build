@@ -30,5 +30,5 @@ $ git clone
 ## Testing 
 1. ```$ grunt connect:iserver``` pour un test en local sur http://localhost:9001/
 2. ```$ grunt verify``` runs JSHint and CSSHint to check files
-3. ```$ grunt clean``` runs JSHint and CSSHint to modify files
+3. ```$ grunt cleanjs``` runs JSHint and CSSHint to modify files
 4. ```$ grunt perf``` run phantomas to check front-end performance
