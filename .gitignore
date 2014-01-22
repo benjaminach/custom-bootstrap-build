@@ -4,6 +4,7 @@ bower_components/
 screenshots/tmp/
 node_modules/
 phantomas/*
+dist/tmp
 
 # Vagrant files #
 ######################

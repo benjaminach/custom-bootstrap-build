@@ -285,13 +285,11 @@ module.exports = function (grunt) {
 		'copy:bootstrapfonts',
 		'copy:styleguideassets',
 		'imagemin',
-		//'validation',
-		//'csslint',
 		'clean:tmp'
 	]);
 
 	grunt.registerTask('verify', ['jsbeautifier:verify', 'jshint', 'csslint']);
-	grunt.registerTask('clean', ['jsbeautifier:modify', 'jshint']);
+	grunt.registerTask('cleanjs', ['jsbeautifier:modify', 'jshint']);
 	grunt.registerTask('perf', ['connect:docserver', 'phantomas']);
 
 };
