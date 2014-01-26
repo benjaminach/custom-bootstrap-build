@@ -249,7 +249,9 @@ module.exports = function (grunt) {
 			styleguide: {
 				options: {
 					indexPath: './phantomas/',
-					url: 'http://localhost:9002/'
+					url: 'http://localhost:9002/',
+					'timeout': 60,
+					'analyze-css': true
 				}
 			}
 		}
@@ -289,7 +291,7 @@ module.exports = function (grunt) {
 		'clean:tmp'
 	]);
 
-	grunt.registerTask('verify', ['jsbeautifier:verify', 'jshint', 'csslint']);
+	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'csslint']);
 	grunt.registerTask('cleanjs', ['jsbeautifier:modify', 'jshint']);
 	grunt.registerTask('perf', ['connect:docserver', 'phantomas']);
 
