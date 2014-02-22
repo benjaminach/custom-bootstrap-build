@@ -3,8 +3,12 @@
 bower_components/
 screenshots/tmp/
 node_modules/
-phantomas/*
-dist/*
+phantomas/
+dist/
+style-guide/css/
+style-guide/js/
+style-guide/fonts/
+style-guide/images/
 
 # Vagrant files #
 ######################
