@@ -4,7 +4,7 @@ bower_components/
 screenshots/tmp/
 node_modules/
 phantomas/
-dist/
+dist/tmp/
 style-guide/css/
 style-guide/js/
 style-guide/fonts/
