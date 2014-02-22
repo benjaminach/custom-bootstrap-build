@@ -1,6 +1,6 @@
 # Custom Bootstrap Build [![Build Status](https://travis-ci.org/benjaminach/custom-bootstrap-build.png?branch=master)](https://travis-ci.org/benjaminach/custom-bootstrap-build) [![Dependency Status](https://gemnasium.com/benjaminach/custom-bootstrap-build.png)](https://gemnasium.com/benjaminach/custom-bootstrap-build)
 
-Create a custom Bootstrap 3.0.3 build with jQuery and Parsley.
+Create a custom Bootstrap 3.1.1 build with jQuery and Parsley.
 
 ## Setup
 
