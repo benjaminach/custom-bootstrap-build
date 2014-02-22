@@ -32,3 +32,7 @@ $ git clone
 2. ```$ grunt test``` build and runs JSHint and CSSHint to check files
 3. ```$ grunt cleanjs``` runs JSHint and CSSHint to modify files
 4. ```$ grunt perf``` run phantomas to check front-end performance
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/benjaminach/custom-bootstrap-build/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
