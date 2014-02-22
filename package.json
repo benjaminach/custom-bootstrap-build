@@ -20,8 +20,8 @@
 		"type": "git",
 		"url": "git@github.com:benjaminach/custom-bootstrap-build.git"
 	},
-	"devDependencies": {
-		"grunt": "~0.4.1",
+	"dependencies": {
+		"grunt": "~0.4.2",
 		"grunt-cli": "~0.1",
 		"grunt-contrib-clean": "~0.5.0",
 		"grunt-contrib-concat": "~0.3.0",
@@ -29,7 +29,6 @@
 		"grunt-contrib-uglify": "~0.3.2",
 		"grunt-contrib-less": "~0.9.0",
 		"grunt-contrib-watch": "latest",
-		"jpegtran-bin": "0.2.0",
 		"grunt-contrib-imagemin": "latest",
 		"grunt-contrib-connect": "latest",
 		"grunt-html-validation": "latest",
@@ -37,6 +36,6 @@
 		"grunt-contrib-csslint": "latest",
 		"grunt-jsbeautifier": "latest",
 		"grunt-phantomas": "latest",
-		"grunt-modernizr": "~0.4.1"
+		"grunt-modernizr": "~0.5.1"
 	}
 }

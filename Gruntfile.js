@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 		datetime: Date.now(),
 
 		clean: {
-			dist: ['dist'],
+			dist: ['dist/*'],
 			tmp: ['dist/tmp'],
 			styleguideassets: ['style-guide/fonts/**', 'style-guide/css/**', 'style-guide/images/**', 'style-guide/js/**']
 		},
@@ -38,7 +38,7 @@ module.exports = function (grunt) {
 				src: [
 					'bower_components/respond/dest/respond.src.js',
 					'bower_components/jquery/jquery.js',
-					//'dist/tmp/js/modernizr-custom.js',
+					'dist/tmp/js/modernizr-custom.js',
 					'bower_components/html5shiv/dist/html5shiv-printshiv.js',
 					'bower_components/parsleyjs/i18n/messages.fr.js',
 					'bower_components/parsleyjs/dist/parsley.min.js',
@@ -121,33 +121,41 @@ module.exports = function (grunt) {
 		},
 
 		modernizr: {
-			'devFile': 'bower_components/modernizr/modernizr.js',
-			'outputFile': 'dist/tmp/js/modernizr-custom.js',
-			// Based on default settings on http://modernizr.com/download/
-			'extra': {
-				'shiv': true,
-				'printshiv': true,
-				'load': false,
-				'mq': false,
-				'cssclasses': true
-			},
-			// Based on default settings on http://modernizr.com/download/
-			'extensibility': {
-				'addtest': false,
-				'prefixed': false,
-				'teststyles': false,
-				'testprops': false,
-				'testallprops': false,
-				'hasevents': false,
-				'prefixes': false,
-				'domprefixes': false
-			},
-			// By default, source is uglified before saving
-			'uglify': false,
-			'tests': [],
-			'parseFiles': false,
-			'matchCommunityTests': false,
-			'customTests': []
+
+			dist: {
+				// [REQUIRED] Path to the build you're using for development.
+				'devFile': 'bower_components/modernizr/modernizr.js',
+				// [REQUIRED] Path to save out the built file.
+				'outputFile': 'dist/tmp/js/modernizr-custom.js',
+				// Based on default settings on http://modernizr.com/download/
+				'extra': {
+					'shiv': true,
+					'printshiv': true,
+					'load': false,
+					'mq': false,
+					'cssclasses': true
+				},
+
+				// Based on default settings on http://modernizr.com/download/
+				'extensibility': {
+					'addtest': false,
+					'prefixed': false,
+					'teststyles': false,
+					'testprops': false,
+					'testallprops': false,
+					'hasevents': false,
+					'prefixes': false,
+					'domprefixes': false
+				},
+
+				// By default, source is uglified before saving
+				'uglify': false,
+				'tests': [],
+				'parseFiles': false,
+				'matchCommunityTests': false,
+				'customTests': []
+			}
+
 		},
 
 		validation: {
@@ -276,7 +284,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('default', [
 		'clean:dist',
 		'clean:styleguideassets',
-		//'modernizr',
+		'modernizr',
 		'jshint',
 		'concat:bootstrap-js',
 		'concat:libs-js',

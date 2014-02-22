@@ -1,6 +1,6 @@
 {
   "name": "custom-bootstrap-build",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": [
     "./dist/js/*",
     "./dist/css/*",
@@ -19,9 +19,8 @@
     "phantomas"
   ],
   "dependencies": {
-    "jquery": "~1.10",
-    "bootstrap": "3.0.3",
-    "font-awesome": "~4.0.3",
+    "jquery": "~1.11",
+    "bootstrap": "~3.1.0",
     "modernizr": "~2.7.1",
     "respond": "~1.4.2",
     "parsleyjs": "~1.2.3",
