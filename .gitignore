@@ -3,7 +3,9 @@
 bower_components/
 screenshots/tmp/
 node_modules/
-phantomas/*
+phantomas/data/
+phantomas/public/
+phantomas/index.html
 dist/tmp/
 style-guide/css/
 style-guide/js/
