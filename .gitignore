@@ -11,6 +11,8 @@ style-guide/css/
 style-guide/js/
 style-guide/fonts/
 style-guide/images/
+style-guide/validation-status.json
+style-guide/validation-report.json
 
 # Vagrant files #
 ######################

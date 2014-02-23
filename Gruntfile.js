@@ -39,7 +39,6 @@ module.exports = function (grunt) {
 					'bower_components/respond/dest/respond.src.js',
 					'bower_components/jquery/jquery.js',
 					'dist/tmp/js/modernizr-custom.js',
-					'bower_components/html5shiv/dist/html5shiv-printshiv.js',
 					'bower_components/parsleyjs/i18n/messages.fr.js',
 					'bower_components/parsleyjs/dist/parsley.min.js',
 					'js/config.parsley.js'
@@ -161,15 +160,15 @@ module.exports = function (grunt) {
 		validation: {
 			options: {
 				reset: true,
-				path: 'dist/report/validation-status.json',
-				reportpath: 'dist/report/validation-report.json',
+				path: 'style-guide/validation-status.json',
+				reportpath: 'style-guide/validation-report.json',
 				relaxerror: [
 					'Bad value X-UA-Compatible for attribute http-equiv on element meta.',
 					'Element img is missing required attribute src.'
 				]
 			},
 			files: {
-				src: ['dist/style-guide/index.html']
+				src: ['style-guide/css.html', 'style-guide/javascript.html', 'style-guide/components.html']
 			}
 		},
 
@@ -299,7 +298,7 @@ module.exports = function (grunt) {
 		'clean:tmp'
 	]);
 
-	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'csslint']);
+	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'validation', 'csslint']);
 	grunt.registerTask('cleanjs', ['jsbeautifier:modify', 'jshint']);
 	grunt.registerTask('perf', ['connect:docserver', 'phantomas']);
 
