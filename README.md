@@ -28,7 +28,7 @@ $ git clone
 2. ```$ grunt watch``` this is a convenience method for watching just Less files and automatically building them whenever you save.
 
 ## Testing 
-1. ```$ grunt connect:iserver``` pour un test en local sur http://localhost:9001/
+1. ```$ grunt connect:serve``` for local testing http://localhost:9001/
 2. ```$ grunt test``` build and runs JSHint and CSSHint to check files
 3. ```$ grunt cleanjs``` runs JSHint and CSSHint to modify files
 4. ```$ grunt perf``` run phantomas to check front-end performance

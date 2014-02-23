@@ -209,14 +209,14 @@ module.exports = function (grunt) {
 
 		// Local server with live-reload
 		connect: {
-			iserver: {
+			serve: {
 				options: {
 					port: 9001,
 					base: 'style-guide',
 					keepalive: true
 				}
 			},
-			docserver: {
+			test: {
 				options: {
 					port: 9002,
 					base: 'style-guide'
@@ -300,6 +300,6 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'validation', 'csslint']);
 	grunt.registerTask('cleanjs', ['jsbeautifier:modify', 'jshint']);
-	grunt.registerTask('perf', ['connect:docserver', 'phantomas']);
+	grunt.registerTask('perf', ['connect:test', 'phantomas']);
 
 };
