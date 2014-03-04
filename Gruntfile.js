@@ -261,7 +261,22 @@ module.exports = function (grunt) {
 					'analyze-css': true
 				}
 			}
+		},
+
+		phantomcss: {
+			options: {},
+			styleguide: {
+				options: {
+					screenshots: 'test/visual/screenshots/',
+					results: 'results/visual/',
+                    logLevel: 'debug'
+				},
+				src: [
+					'test/visual/scenarios/1.js'
+				]
+			}
 		}
+
 		//fin
 	});
 
@@ -279,6 +294,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-jsbeautifier');
 	grunt.loadNpmTasks('grunt-phantomas');
+	grunt.loadNpmTasks('grunt-phantomcss');
 
 	grunt.registerTask('default', [
 		'clean:dist',
@@ -299,7 +315,8 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'validation', 'csslint']);
+	grunt.registerTask('visualtest', ['connect:test', 'phantomcss']);
 	grunt.registerTask('cleanjs', ['jsbeautifier:modify', 'jshint']);
-	grunt.registerTask('perf', ['connect:test', 'phantomas']);
+	grunt.registerTask('perf', ['connect:test', 'phantomas:styleguide']);
 
 };

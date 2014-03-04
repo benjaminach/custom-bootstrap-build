@@ -1,6 +1,6 @@
 {
 	"name": "custom-bootstrap-build",
-	"description": "Create a custom Bootstrap build with jQuery and Parsley.",
+	"description": "Create a custom Bootstrap 3.1.1 theme with jQuery 1.11 and ParsleyJS 1.2",
 	"version": "0.1.0",
 	"author": {
 		"name": "Benjamin ACH",
@@ -26,8 +26,8 @@
 		"grunt-contrib-clean": "~0.5.0",
 		"grunt-contrib-concat": "~0.3.0",
 		"grunt-contrib-copy": "~0.5.0",
-		"grunt-contrib-uglify": "~0.3.2",
-		"grunt-contrib-less": "~0.9.0",
+		"grunt-contrib-uglify": "~0.3.3",
+		"grunt-contrib-less": "~0.10.0",
 		"grunt-contrib-watch": "latest",
 		"grunt-contrib-imagemin": "latest",
 		"grunt-contrib-connect": "latest",
@@ -36,6 +36,7 @@
 		"grunt-contrib-csslint": "latest",
 		"grunt-jsbeautifier": "latest",
 		"grunt-phantomas": "latest",
-		"grunt-modernizr": "~0.5.1"
+		"grunt-modernizr": "~0.5.1",
+        "grunt-phantomcss": "latest"
 	}
 }
