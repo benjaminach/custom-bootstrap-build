@@ -269,7 +269,7 @@ module.exports = function (grunt) {
 				options: {
 					screenshots: 'test/visual/screenshots/',
 					results: 'results/visual/',
-                    logLevel: 'debug'
+					logLevel: 'debug'
 				},
 				src: [
 					'test/visual/scenarios/1.js'
