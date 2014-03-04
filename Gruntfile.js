@@ -314,7 +314,7 @@ module.exports = function (grunt) {
 		'clean:tmp'
 	]);
 
-	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'validation', 'csslint']);
+	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'validation', 'csslint', 'visualtest']);
 	grunt.registerTask('visualtest', ['connect:test', 'phantomcss']);
 	grunt.registerTask('cleanjs', ['jsbeautifier:modify', 'jshint']);
 	grunt.registerTask('perf', ['connect:test', 'phantomas:styleguide']);
