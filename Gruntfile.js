@@ -3,11 +3,11 @@
 module.exports = function (grunt) {
 	'use strict';
 
-    require('time-grunt')(grunt);
-    require('jit-grunt')(grunt, {
-        'validation': 'grunt-html-validation'
-    });
-    
+	require('time-grunt')(grunt);
+	require('jit-grunt')(grunt, {
+		'validation': 'grunt-html-validation'
+	});
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		datetime: Date.now(),
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
 
 		concat: {
 			'options': {
-				nonull: true,
+				nonull: true
 			},
 			'bootstrap-js': {
 				src: [
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 			'libs-js': {
 				src: [
 					'bower_components/respond/dest/respond.src.js',
-					'bower_components/jquery/jquery.js',
+					'bower_components/jquery/dist/jquery.js',
 					'dist/tmp/js/modernizr-custom.js',
 					'bower_components/parsleyjs/i18n/messages.fr.js',
 					'bower_components/parsleyjs/dist/parsley.min.js',
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
 					sourceMap: true,
 					outputSourceFiles: true,
 					sourceMapURL: 'app.css.map',
-					sourceMapFilename: 'dist/css/app.css.map',
+					sourceMapFilename: 'dist/css/app.css.map'
 				},
 				files: {
 					'dist/css/app.css': 'less/custom-bootstrap-build.less'
@@ -95,7 +95,7 @@ module.exports = function (grunt) {
 					cleancss: true,
 					compress: true,
 					report: 'min',
-					ieCompat: 'true',
+					ieCompat: 'true'
 				},
 				files: {
 					'dist/css/app.min.css': 'less/custom-bootstrap-build.less'
@@ -269,21 +269,6 @@ module.exports = function (grunt) {
 		}
 		//fin
 	});
-
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-modernizr');
-	grunt.loadNpmTasks('grunt-html-validation');
-	grunt.loadNpmTasks('grunt-contrib-csslint');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-jsbeautifier');
-	grunt.loadNpmTasks('grunt-phantomas');
 
 	grunt.registerTask('default', [
 		'clean:dist',
