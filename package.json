@@ -37,7 +37,7 @@
 		"grunt-jsbeautifier": "latest",
 		"grunt-phantomas": "latest",
 		"grunt-modernizr": "~0.5.1",
-        "jit-grunt": "~0.7",
-        "time-grunt": "~0.4"
+		"jit-grunt": "~0.7",
+		"time-grunt": "~0.4"
 	}
 }
