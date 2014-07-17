@@ -36,6 +36,8 @@
 		"grunt-contrib-csslint": "latest",
 		"grunt-jsbeautifier": "latest",
 		"grunt-phantomas": "latest",
-		"grunt-modernizr": "~0.5.1"
+		"grunt-modernizr": "~0.5.1",
+		"jit-grunt": "~0.7",
+		"time-grunt": "~0.4"
 	}
 }
