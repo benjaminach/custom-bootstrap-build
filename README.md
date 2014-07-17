@@ -1,4 +1,4 @@
-# Custom Bootstrap Build [![Build Status](https://travis-ci.org/benjaminach/custom-bootstrap-build.png?branch=master)](https://travis-ci.org/benjaminach/custom-bootstrap-build) [![Dependency Status](https://gemnasium.com/benjaminach/custom-bootstrap-build.png)](https://gemnasium.com/benjaminach/custom-bootstrap-build)
+# Custom Bootstrap Build [![Build Status](https://travis-ci.org/benjaminach/custom-bootstrap-build.png?branch=master)](https://travis-ci.org/benjaminach/custom-bootstrap-build) [ ![Codeship Status for benjaminach/custom-bootstrap-build](https://www.codeship.io/projects/cfd6aec0-690e-0131-6545-1ec8da5a88d3/status)](https://www.codeship.io/projects/12771) [![Dependency Status](https://gemnasium.com/benjaminach/custom-bootstrap-build.png)](https://gemnasium.com/benjaminach/custom-bootstrap-build)
 
 Create a custom Bootstrap 3.1.1 build with jQuery and Parsley.
 
