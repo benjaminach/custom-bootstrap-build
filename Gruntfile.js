@@ -266,6 +266,10 @@ module.exports = function (grunt) {
 					'analyze-css': true
 				}
 			}
+		},
+
+		stylestats: {
+			src: ['dist/css/app.min.css']
 		}
 		//fin
 	});
@@ -288,7 +292,7 @@ module.exports = function (grunt) {
 		'clean:tmp'
 	]);
 
-	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'validation', 'csslint']);
+	grunt.registerTask('test', ['default', 'jsbeautifier:verify', 'jshint', 'validation', 'csslint', 'stylestats']);
 	grunt.registerTask('cleanjs', ['jsbeautifier:modify', 'jshint']);
 	grunt.registerTask('perf', ['connect:test', 'phantomas']);
 
